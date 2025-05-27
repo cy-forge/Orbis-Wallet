@@ -15,6 +15,13 @@
       "when": 1746366808897,
       "tag": "0001_absurd_tombstone",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "7",
+      "when": 1746463824219,
+      "tag": "0002_short_dorian_gray",
+      "breakpoints": true
     }
   ]
 }

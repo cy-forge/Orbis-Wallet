@@ -38,6 +38,22 @@ export const rolesToUsersTable = pgTable('roles_users', {
     primaryKey({ columns: [t.roleId, t.userId] }),
 ]);
 
+// auth_logs table
+export const authLogsTable  = pgTable('auth_logs ', {
+    id: uuid('id').primaryKey().defaultRandom(),
+    userId: uuid('user_id').notNull().references(() => usersTable.id),
+    browser: varchar('browser', { length: 255 }).notNull(),
+    ipAddress: varchar('ip_address', { length: 255 }).notNull(),
+    deviceType: varchar('device_type', { length: 255 }),
+    deviceOs: varchar('device_os', { length: 255 }),
+    country : varchar('country', { length: 255 }),
+    date: varchar('date', { length: 50 }),
+    isBot: boolean('is_bot').notNull().default(false),
+    isTunnel: boolean('is_tunnel').notNull().default(false),
+    createdAt: timestamp('created_at', { withTimezone: true }).defaultNow().notNull(),
+    updatedAt: timestamp('updated_at', { withTimezone: true }).defaultNow().notNull(),
+});
+  
 // categories Table
 export const categoriesTable = pgTable('categories', {
     id: uuid('id').primaryKey().defaultRandom(),
