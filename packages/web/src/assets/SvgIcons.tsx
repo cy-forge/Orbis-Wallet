@@ -357,10 +357,6 @@ export const SvgIcons = {
       width="24"
       height="24"
       viewBox="0 0 24 24"
-      fill="none"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
         d="M19 9H6.65856C5.65277 9 5.14987 9 5.02472 8.69134C4.89957 8.38268 5.25517 8.01942 5.96637 7.29289L8.21091 5"
         stroke="currentColor"
         stroke-width="1.5"
@@ -436,6 +432,33 @@ export const SvgIcons = {
         d="M12.5944 0.5H15.0361L9.70281 6.44222L16 14.5H11.0522L7.19679 9.61556L2.76305 14.5H0.321285L6.04016 8.15333L0 0.5H5.07631L8.57831 4.98L12.5944 0.5ZM11.7269 13.0689H13.0763L4.33735 1.83778H2.85944L11.7269 13.0689Z"
         fill="currentColor"
       />
+    </svg>
+  ),
+  perksIconPlaceholder: () => (
+    <svg
+      width="46"
+      height="51"
+      viewBox="0 0 46 51"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M23 0L45.0836 12.75V38.25L23 51L0.916351 38.25V12.75L23 0Z"
+        fill="url(#paint0_linear_423_5217)"
+      />
+      <defs>
+        <linearGradient
+          id="paint0_linear_423_5217"
+          x1="23"
+          y1="0"
+          x2="23"
+          y2="51"
+          gradientUnits="userSpaceOnUse"
+        >
+          <stop stopColor="#656565" />
+          <stop offset="1" stopColor="#9F9F9F" />
+        </linearGradient>
+      </defs>
     </svg>
   ),
 };
